@@ -6,17 +6,21 @@ import axios from "axios"
 
 function BetLine(){
   const [lineData,setLineData] = useState()
-
+  const [loading,setLoading] = useState(false)
   useEffect( ()=>
   {
+    setLoading(true)
    axios.get(
       `https://nesine-case-study.onrender.com/bets`
-    ).then(response => 
+    ).then(response =>  {
       setLineData(response.data)
+        setLoading(false)
+      }
      );
      
   },[])
     return (
+      loading ? <div className="loader"></div> : 
         <div style={{marginTop:'40px'}}>
           {lineData && lineData.map((line,index)=> {
           return (
