@@ -1,0 +1,38 @@
+
+.market-header-col-2 span {
+  width: 120px;
+  padding: 2px;
+  padding-top :10px;
+  text-align: center;
+  border:1px solid black;
+}
+.market-header-col span {
+    width: 120px;
+    padding: 2px;
+    text-align: center;
+   
+  }
+  .market-header-col {
+    border:1px solid black
+  }
+.market-header {
+ 
+  position: fixed;
+    height: 40px;
+    text-align: center;
+    background-color: cadetblue;
+    display: flex;
+    width: 100%;
+    font-size: 12px;
+}
+.market-header-col {
+  padding-top :10px;
+    width: 20%;
+    display: flex;
+    text-align: center;
+}
+.market-header-col-2 {
+
+    width: 80%;
+    display: flex;
+}

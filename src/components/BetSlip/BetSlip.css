@@ -1,0 +1,26 @@
+.bet-slip {
+    font-size: 13px;
+    width: 500px;
+    position: fixed;
+    bottom: 0;
+    right: 0;
+    border: 1px solid black;
+    height: auto;
+    min-height: 30px;
+    background-color: #fff;
+}
+.bet-slip-item {
+    margin: 2px 0px;
+    padding: 3px 5px;
+    
+}
+.bet-slip-total {
+    font-size: 15px;
+   display: block;
+    padding: 2px 5px;
+    border-top: 1px solid black;
+    width: 500px;
+}
+.bet-slip-odd {
+    font-weight: bold;
+}

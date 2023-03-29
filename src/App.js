@@ -1,25 +1,24 @@
-import logo from './logo.svg';
-import './App.css';
-
+import MarketHeaders from './components/Market/MarketHeaders.js';
+import BetLine from './components/Line/BetLine.js';
+import BetSlip from './components/BetSlip/BetSlip.js';
+import React, {useState } from 'react'
+import { MainContext } from './context';
 function App() {
-  return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
-  );
+
+  const [betSlipData, setBetSlip] = useState([])
+
+  const data = {
+  betSlipData,
+  setBetSlip
+  }
+    return (
+      <MainContext.Provider value={data}>
+        <MarketHeaders/>
+         <BetLine/>
+         <BetSlip/>
+      </MainContext.Provider>
+    )
 }
+
 
 export default App;
